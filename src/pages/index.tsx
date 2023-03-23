@@ -9,6 +9,7 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
+import Link from "next/link";
 dayjs.extend(relativeTime);
 
 const CreatePostWizard = () => {
@@ -90,10 +91,14 @@ const PostView = (props: PostWithUser) => {
       />
       <div className="flex flex-col">
         <div className="flex gap-1 text-slate-300">
-          <span className="">{`@${author.username}`}</span>
-          <span className="font-thin">{` · ${dayjs(
-            post.createdAt
-          ).fromNow()}`}</span>
+          <Link href={`/@${author.username}`}>
+            <span className="">{`@${author.username}`}</span>
+          </Link>
+          <Link href={`/posts/${post.id}`}>
+            <span className="font-thin">{` · ${dayjs(
+              post.createdAt
+            ).fromNow()}`}</span>
+          </Link>
         </div>
         <span className="text-xl">{post.content}</span>
       </div>
