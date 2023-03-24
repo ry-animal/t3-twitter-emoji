@@ -1,26 +1,67 @@
-import { type NextPage } from "next";
-
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
+import { createProxySSGHelpers } from "@trpc/react-query/ssg";
+import type { GetStaticProps, NextPage } from "next";
+import Head from "next/head";
+import superjson from "superjson";
+import { PageLayout } from "~/components/layout";
+import { appRouter } from "~/server/api/root";
+import { prisma } from "~/server/db";
 import { api } from "~/utils/api";
-import { LoadingPage } from "~/components/loading";
-dayjs.extend(relativeTime);
+import Image from "next/image";
 
-const ProfilePage: NextPage = () => {
-  const { data, isLoading } = api.profile.getUserByUsername.useQuery({
-    username: "johndoe",
+const ProfilePage: NextPage<{ username: string }> = ({ username }) => {
+  const { data } = api.profile.getUserByUsername.useQuery({
+    username,
   });
 
-  if (isLoading) return <LoadingPage />;
   if (!data) return <div>Something went wrong</div>;
 
   return (
     <>
-      <main className="flex h-screen justify-center ">
-        <div className="flex h-full flex-col">{data.username}</div>
-      </main>
+      <Head>
+        <title>{data.username}</title>
+      </Head>
+      <PageLayout>
+        <div className="relative h-48 bg-slate-600">
+          <Image
+            src={data.profileImageUrl}
+            alt="profile image"
+            width={128}
+            height={128}
+            className="absolute bottom-0 left-0 -mb-[64px] ml-4 rounded-full border-4 border-black"
+          />
+        </div>
+        <div className="h-[64px]" />
+        <div className="p-4">{data.username}</div>
+      </PageLayout>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const ssg = createProxySSGHelpers({
+    router: appRouter,
+    ctx: { prisma, userId: null },
+    transformer: superjson, // optional - adds superjson serialization
+  });
+
+  const slug = context.params?.slug;
+
+  if (typeof slug !== "string") throw new Error("Slug is not a string");
+
+  const username = slug.replace("@", "");
+
+  await ssg.profile.getUserByUsername.prefetch({ username });
+
+  return {
+    props: {
+      trpcState: ssg.dehydrate(),
+      username,
+    },
+  };
+};
+
+export const getStaticPaths = () => {
+  return { paths: [], fallback: "blocking" };
 };
 
 export default ProfilePage;
