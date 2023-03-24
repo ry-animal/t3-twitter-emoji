@@ -13,14 +13,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install Deps
-        uses: npm install
+      - name: Install Dependencies
+        run: npm install
 
       - name: Typecheck
-        uses: npm run typecheck
+        run: npm run typecheck
 
       - name: Lint
-        uses: npm run lint
+        run: npm run lint
 
-      - name: Print Env Vars
-        run: echo $MY_ENV_VAR
+      - name: Print Environment Variable
+        run: echo $DATABASE_URL
