@@ -1,7 +1,8 @@
 repo_name: ry-animal/t3-twitter-emoji
 report_id: f884f8728b652c1e893d9baaad93a993
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-09T17:00:19+00:00'
+timestamp: '2024-01-04T15:06:34+00:00'
 requested_by: ry-animal
 provider: github
 branch: main
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji
   detection_source: Repo Metadata
 - name: TypeScript
   description: A superset of JavaScript that compiles to clean JavaScript output
@@ -35,6 +38,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji
   detection_source: Repo Metadata
 - name: Autoprefixer
   description: PostCSS plugin to parse CSS and add vendor prefixes to CSS rules
@@ -44,6 +48,7 @@ tools:
   category: Languages & Frameworks
   sub_category: CSS Pre-processors / Extensions
   image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
@@ -56,7 +61,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/5936/nextjs.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
@@ -69,6 +74,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
@@ -82,7 +88,7 @@ tools:
   category: Libraries
   sub_category: Javascript UI Libraries
   image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 21:12:10.000000000 Z
@@ -96,7 +102,7 @@ tools:
   category: Data Stores
   sub_category: Object Relational Mapper (ORM)
   image_url: https://img.stackshare.io/service/8680/Logo_Symbol_White.jpg
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
@@ -109,6 +115,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
@@ -120,6 +127,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -129,6 +137,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/.github/workflows/ci.yml
   detection_source: ".github/workflows/ci.yml"
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-24 04:02:43.000000000 Z
@@ -142,7 +151,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
@@ -154,6 +163,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
@@ -166,6 +176,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji
   detection_source: Repo Metadata
 - name: Zod
   description: TypeScript-first schema validation
@@ -173,6 +184,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/48521/default_eea961e4c374e68a1c7eb5bbc9e4a39920890342.png
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
@@ -186,7 +198,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18156/default_9663441986aa2be78296ccf617e43ef9e612b34e.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-24 04:04:37.000000000 Z
@@ -200,7 +212,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-24 04:04:37.000000000 Z
@@ -214,7 +226,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16943/default_c17ccfb3dc0510bb2c684b87ee080a74a9728c34.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-24 04:04:37.000000000 Z
@@ -228,7 +240,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15894/default_1d65e37e65b7f80761374f0202776043277d505d.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-24 04:04:37.000000000 Z
@@ -242,7 +254,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15946/default_54b691c123fc8979741e800e4dcd3936c0f3b246.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-24 04:04:37.000000000 Z
@@ -256,7 +268,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-24 04:04:37.000000000 Z
@@ -270,7 +282,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-24 04:04:37.000000000 Z
@@ -285,7 +297,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16833/default_5c6919c5e02b8e6c83f3a2b23db5b6962e3caca0.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 18:51:04.000000000 Z
@@ -299,7 +311,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16012/default_7a88bebb451873cc63bd99007de5bd3bb8ef85de.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
@@ -320,7 +332,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 21:12:10.000000000 Z
@@ -334,7 +346,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17398/default_2cd7ed1c123f2fca074a6f4b16c4e73d5bfe82be.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/ry-animal/t3-twitter-emoji/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-23 15:06:14.000000000 Z
